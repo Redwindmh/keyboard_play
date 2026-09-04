@@ -1,14 +1,14 @@
 #include "Arduino.h"
 #include <Keypad.h>
 
-const byte ROWS = 3;
-const byte COLS = 3;
+constexpr byte ROWS = 3;
+constexpr byte COLS = 3;
 
 
-const byte ROW_PINS[ROWS] = {5,6,7};
-const byte COL_PINS[COLS] = {8,9,10};
+byte ROW_PINS[ROWS] = {5,6,7};
+byte COL_PINS[COLS] = {8,9,10};
 
-const char BUTTONS[ROWS][COLS]= {
+char BUTTONS[ROWS][COLS]= {
   {'1', '2', '3'},
   {'4', '5', '6'},
   {'7', '8', '9'}
